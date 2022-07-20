@@ -45,6 +45,7 @@
   border-radius: 5px;
   cursor: pointer;
   border: none;
+  transition: 0.3s;
 }
 .header-btn:hover {
   background-color: #fff;
@@ -83,10 +84,12 @@
   border: 1px solid #e8e8e8;
   display: block;
   text-align: center;
+  transition: 0.3s;
 }
 .match-btn:hover {
   background-color: #dd0000;
   color: #fff;
+  border-color: transparent;
 }
 
 /* blog */
@@ -116,6 +119,7 @@
   background-color: #fff;
   margin-bottom: 10px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .blog-btn:hover {
   color: #fff;
@@ -159,6 +163,7 @@
   cursor: pointer;
   visibility: hidden;
   display: none;
+  transition: 0.3s;
 }
 .hidden {
   visibility: visible;
