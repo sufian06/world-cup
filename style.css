@@ -5,9 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-img {
-  width: 100%;
-}
+
 /* container */
 .container {
   width: 1321px;
