@@ -81,6 +81,8 @@
   text-decoration: none;
   color: #161616;
   border: 1px solid #e8e8e8;
+  display: block;
+  text-align: center;
 }
 .match-btn:hover {
   background-color: #dd0000;
@@ -142,6 +144,25 @@
   margin-right: 30px;
   font-size: 16px;
   font-weight: 400;
+}
+.load-btn {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #e8e8e8;
+  background-color: #dd0000;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 12px 29px;
+  border-radius: 7px;
+  cursor: pointer;
+  visibility: hidden;
+  display: none;
+}
+.hidden {
+  visibility: visible;
+  display: block;
 }
 
 /* footer */
@@ -263,5 +284,63 @@ hr {
     margin: 0;
     margin-bottom: 12px;
     text-align: center;
+  }
+}
+
+/* tablate devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+  .header-content {
+    padding-right: 5px;
+  }
+  .header-content h1 {
+    font-size: 2.375rem;
+    margin-top: 30px;
+  }
+  .header-btn {
+    margin-bottom: 50px;
+  }
+  .matches {
+    flex-direction: column;
+  }
+  .matches-links {
+    background-color: #fff;
+    flex-direction: row;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .match-btn {
+    width: 250px;
+  }
+  .matches-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .load-btn {
+    visibility: visible;
+    display: block;
+  }
+
+  .hidden {
+    visibility: hidden;
+    display: none;
+  }
+
+  .footer-top h2 {
+    padding-top: 55px;
+  }
+  hr {
+    margin: 36px auto;
+  }
+  .footer-links li {
+    margin: 0 7px;
+    margin-bottom: 50px;
+    list-style: none;
   }
 }
